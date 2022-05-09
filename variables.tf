@@ -178,6 +178,12 @@ variable "private_subnets" {
   default     = []
 }
 
+variable "client_names" {
+  description = "A list of Client Names"
+  type        = list(string)
+  default     = []
+}
+
 variable "outpost_subnets" {
   description = "A list of outpost subnets inside the VPC"
   type        = list(string)
